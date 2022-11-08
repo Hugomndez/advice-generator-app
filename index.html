@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Advice generator app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./src/assets/icons/favicon-32x32.png"
+    />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
+    <style>
+      :root {--LightCyan: hsl(193, 38%, 86%);--NeonGreen: hsl(150, 100%, 66%);--GrayBlue: hsl(217, 19%, 38%);--DarkGrayBlue: hsl(217, 19%, 24%);--DarkBlue: hsl(218, 23%, 16%);--FS-P: 1.6rem;--FS-Q: 2.4rem;--FW-Bold: 800;--FF-Primary: 'Manrope', sans-serif;}*, *::before, *::after {box-sizing: inherit;margin: 0;padding: 0;}html {box-sizing: border-box;font-size: 62.5%;}body {font-family: var(--FF-Primary);font-size: var(--FS-P);font-style: normal;font-weight: var(--FW-Bold);}main {width: 100%;height: 100vh;display: flex;justify-content: center;align-items: center;background-color: var(--DarkBlue);}.loading {width: 10rem;height: 10rem;border: 5px solid var(--LightCyan);border-top: 6px solid var(--NeonGreen);border-radius: 100%;margin: auto;animation: spin 1s infinite linear;}.card {position: relative;min-width: 343px;max-width: 540px;min-height: 315px;max-height: 332px;margin: 15px;padding-block: 40px;padding-inline: 24px;text-align: center;background-color: var(--DarkGrayBlue);box-shadow: 30px 50px 80px rgba(0, 0, 0, 0.100202);border-radius: 10px;}.advice {display: block;margin-block-end: 24px;font-size: 1.1rem;letter-spacing: 3.45714px;text-transform: uppercase;color: var(--NeonGreen);}blockquote {margin-block-end: 24px;}blockquote > p {font-size: var(--FS-Q);line-height: 3.3rem;letter-spacing: -0.257143px;color: var(--LightCyan);}.button {position: absolute;top: 100%;left: 50%;transform: translate(-50%, -50%);width: 64px;height: 64px;display: flex;justify-content: center;align-items: center;border: none;border-radius: 50%;background-color: var(--NeonGreen);cursor: pointer;}.button:focus, .button:hover {box-shadow: 0px 0px 40px #53ffaa;}.button svg {pointer-events: none;}.attribution {font-size: 11px;text-align: center;}.attribution a {color: hsl(228, 45%, 44%);}@media screen and (min-width: 450px) {.card {padding: 48px;}.advice {font-size: 1.3rem;letter-spacing: 4.08571px;}blockquote {margin-block-end: 40px;}blockquote > p {font-size: 2.8rem;letter-spacing: -0.3px;}}@keyframes spin {from {transform: rotate(0deg);}to {transform: rotate(360deg);}}
+    </style>
+    <script src="./src/index.js" type="module" async></script>
+  </head>
+  <body>
+    <main>
+      <div class="loading" data-loading></div>
+    </main>
+  </body>
+</html>
