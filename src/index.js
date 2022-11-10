@@ -15,6 +15,8 @@ const render = async () => {
   loading.hidden = true;
 };
 
+render();
+
 const onClick = e => {
   const isButton = e.target.matches('[data-button]');
 
@@ -28,4 +30,3 @@ const onClick = e => {
 
 main.addEventListener('click', onClick);
 
-render();
